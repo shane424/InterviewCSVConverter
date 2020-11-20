@@ -1,0 +1,29 @@
+Instructions:
+
+NOTE: Make sure to fully read the instructions before starting
+
+With this file you will find a handful of files ending in .txt containing the following data:
+
+schedule.txt:
+    A table containing applications, command line flags, start times, stop times, whether the application is enabled,
+    and the days of the week the application runs. Days of the week are read as follows:
+    1,4-7 = Sunday, Wednesday, Thursday, Friday, Saturday
+    *     = Every day of the week
+
+apps#.txt:
+    A date to consider and an unsorted list of application names
+
+example.txt:
+    Example output for apps1.txt
+
+
+Create a Python 3 program that does the following:
+    1.  Takes the path to a schedule file, the path to an app file, and the path to an output file as command line arguments
+    2.  Writes a csv of the applications that would run on the date in the app file as well as their options,
+        start times, and stop times
+
+For example, executing the following should result in a file similar to example.txt:
+    python3 script.py schedule.txt apps1.txt example.txt
+
+You can assume the apps files will never contain an application that is not present in the schedule file and that
+neither input will contain malformed or invalid data
